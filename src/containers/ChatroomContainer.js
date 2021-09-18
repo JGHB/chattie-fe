@@ -10,6 +10,9 @@ class ChatRoomContainer extends React.Component {
         return (
 
             <div>
+                <div>
+                    <h1 className='app-title'>CHOOTIE</h1>
+                </div>
                 <LoginScreenComponent />
                 {/* <ChatScreenComponent /> */}
             </div>

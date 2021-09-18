@@ -1,5 +1,22 @@
+.app-title {
+  margin: auto;
+  width: 50%;
+  width: 1440px;
+  text-align: center;
+
+  color: white;
+  background-color: lightgreen;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  outline-style: solid;
+  outline-color: black;
+}
+
 .login-container {
   margin: auto;
   width: 50%;
+  width: 1440px;
   text-align: center;
+
+  outline-style: solid;
 }
