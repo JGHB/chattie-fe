@@ -1,5 +1,6 @@
 import React from 'react';
 import './../App.css'
+import ErrorMessageComponent from './ErrorMessageComponent';
 
 // component to handle the login screen used to get into the chatroom
 class LoginScreenComponent extends React.Component {
@@ -11,7 +12,8 @@ class LoginScreenComponent extends React.Component {
         // handle state for login screen
         this.state = {
 
-            nameValue: ''
+            nameValue: '',
+            invalidNameErorr: false
         };
 
         this.handleNameInput = this.handleNameInput.bind(this);
@@ -22,7 +24,12 @@ class LoginScreenComponent extends React.Component {
     invalidName() {
         
         if (this.state.nameValue === '') {
-            alert('please enter a name')
+
+            this.setState({invalidNameErorr: true});
+        }
+        
+        else {
+            this.setState({invalidNameErorr: false});
         }
     }
 
@@ -34,9 +41,16 @@ class LoginScreenComponent extends React.Component {
 
     render() {
 
+        // error message to send when login fails
+        const failedLogin = 'Login Failed: Enter a Name';
+
         return (
 
             <div class='login-container'>
+                {
+                    this.state.invalidNameErorr &&
+                    <ErrorMessageComponent errorMsg={failedLogin}/>
+                }
                 <h1 class='login-header'>Login:</h1>
                 <input
                     class='login-field'
