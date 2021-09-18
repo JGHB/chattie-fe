@@ -1,20 +1,20 @@
 import React from 'react';
-import ChatscreenComponent from '../components/ChatscreenComponent';
-import LoginComponent from '../components/LoginComponent';
+import ChatScreenComponent from '../components/ChatScreenComponent';
+import LoginScreenComponent from '../components/LoginScreenComponent';
 
 // main container to hold all contents of the chatroom
-class ChatroomContainer extends React.Component {
+class ChatRoomContainer extends React.Component {
 
     render() {
 
         return (
 
             <div>
-                <LoginComponent />
-                <ChatscreenComponent />
+                <LoginScreenComponent />
+                <ChatScreenComponent />
             </div>
         )
     }
 }
 
-export default ChatroomContainer
+export default ChatRoomContainer

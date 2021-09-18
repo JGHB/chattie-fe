@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import ChatroomContainer from './containers/ChatroomContainer';
+import ChatRoomContainer from './containers/ChatRoomContainer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <ChatroomContainer />
+    <ChatRoomContainer />
   );
 }
 

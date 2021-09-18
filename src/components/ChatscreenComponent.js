@@ -1,16 +1,19 @@
 import React from "react";
-import LoginComponent from "./LoginComponent";
+import ChatBoxComponent from "./ChatBoxComponent";
 
 // component to handle the actual chatroom screen
-class ChatscreenComponent extends React.Component {
+class ChatScreenComponent extends React.Component {
 
     render() {
         
         return (
             
-            <h1>Chatscreen</h1>
+            <div>
+                <h1>Chat Room #IDNumberHere</h1>
+                <ChatBoxComponent />
+            </div>
         )
     }
 }
 
-export default ChatscreenComponent;
+export default ChatScreenComponent;
