@@ -11,7 +11,7 @@ class ChatRoomContainer extends React.Component {
 
             <div>
                 <LoginScreenComponent />
-                <ChatScreenComponent />
+                {/* <ChatScreenComponent /> */}
             </div>
         )
     }
